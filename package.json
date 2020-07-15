@@ -3,17 +3,35 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/styles": "^4.10.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "@types/express": "^4.17.7",
     "@types/jest": "^24.0.0",
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
+    "@types/uuid": "^8.0.0",
+    "@types/youtube": "^0.0.39",
+    "@types/yt-search": "^2.0.0",
+    "express": "^4.17.1",
+    "fs-monkey": "^1.0.1",
+    "gun": "^0.2020.520",
+    "gun-flint": "^0.0.28",
+    "memfs": "^3.2.0",
+    "mongodb": "^3.5.9",
+    "mongojs": "^3.1.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-player": "^2.5.0",
     "react-scripts": "3.4.1",
-    "typescript": "~3.7.2"
+    "ts-type": "^1.2.24",
+    "typescript": "~3.7.2",
+    "uuid": "^8.2.0",
+    "yt-search": "^2.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -24,6 +42,7 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "proxy": "http://localhost:8765",
   "browserslist": {
     "production": [
       ">0.2%",
