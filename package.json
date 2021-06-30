@@ -3,6 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@chakra-ui/core": "^0.8.0",
+    "@emotion/core": "^10.0.35",
+    "@emotion/styled": "^10.0.27",
+    "@fluidframework/aqueduct": "^0.26.0",
+    "@fluidframework/get-tinylicious-container": "^0.26.0",
+    "@fluidframework/map": "^0.26.0",
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
     "@material-ui/styles": "^4.10.0",
@@ -15,26 +21,40 @@
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
     "@types/uuid": "^8.0.0",
+    "@types/wavesurfer.js": "^3.3.1",
     "@types/youtube": "^0.0.39",
     "@types/yt-search": "^2.0.0",
+    "emotion-theming": "^10.0.27",
     "express": "^4.17.1",
+    "fp-ts": "^2.8.2",
     "fs-monkey": "^1.0.1",
     "gun": "^0.2020.520",
     "gun-flint": "^0.0.28",
+    "io-ts": "^2.2.10",
+    "localforage": "^1.9.0",
     "memfs": "^3.2.0",
+    "mobx": "^5.15.6",
+    "mobx-react-lite": "^2.2.1",
+    "mobx-state-tree": "^3.17.2",
     "mongodb": "^3.5.9",
     "mongojs": "^3.1.0",
+    "polished": "^3.6.6",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-player": "^2.5.0",
     "react-scripts": "3.4.1",
+    "stream-browserify": "^3.0.0",
+    "tinylicious": "^0.2.3810",
     "ts-type": "^1.2.24",
     "typescript": "~3.7.2",
     "uuid": "^8.2.0",
-    "yt-search": "^2.1.1"
+    "wavesurfer.js": "^4.0.1",
+    "yt-search": "^2.1.1",
+    "ytdl-core": "dmisdm/node-ytdl-core"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start:react": "react-scripts start",
+    "start": "npm-run-all -p start:*",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -42,7 +62,7 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "proxy": "http://localhost:8765",
+  "proxy": "http://localhost:3001",
   "browserslist": {
     "production": [
       ">0.2%",
@@ -54,5 +74,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
   }
 }

@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const server = require("http").createServer(app);
 const Gun = require("gun");
+require("gun/lib/bye");
 const yts = require("yt-search");
 
 const gun = Gun({
